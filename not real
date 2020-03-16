@@ -1,0 +1,58 @@
+//variables are made 
+var sad = prompt("plese imput a subtration,addtion,mutplcation or divtion problem")
+var z = 0
+var x = 0
+var y = 0
+var t = 0
+//splits up the prompt
+//for loop makes sure code is working
+for (var i=0, y = NaN;isNaN(y)==true;i++){
+var array1 = ["+","-","*","/"];
+t = sad.split(array1[i])
+//Sets x and y for the coming math
+x = parseInt(t[0])
+y = parseInt(t[1]) 
+//console.log("Loop Count: "+i)
+//Console log makes sure I can see what x and y are
+//console.log("x = "+x)
+//console.log("y = " +y)
+//trigers math for the caculations
+if (i == 0){
+add()
+console.log(z)
+}
+if (i == 1){
+subtraction()
+console.log(z)
+}
+if (i == 2){
+multiplcation()
+console.log(z)
+}
+if (i == 3){
+divide()
+console.log(z)
+}
+}
+
+//array for puting all the functions together
+var array = [x, y, add(), subtraction(), multiplcation(), divide()];
+//console.log(array)
+//function town where all the functions are. function town is here
+function add(){
+z = x + y
+return (z)
+}
+function subtraction(){
+z = x - y
+return (z)
+}
+function multiplcation() {
+  z = x * y
+  return (z)
+}
+function divide() {
+  z = x / y
+  return (z)
+}
+
